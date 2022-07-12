@@ -1,12 +1,13 @@
-CREATE TABLE unique_cats (cat_id INT NOT NULL,
-    name VARCHAR(20) NOT NULL DEFAULT 'unnamed',
-    age INT NOT NULL DEFAULT 99,
-    PRIMARY KEY (cat_id)
+CREATE TABLE shirts
+(
+    shirt_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    article VARCHAR(20),
+   	color VARCHAR(20),
+    shirt_size VARCHAR(20),
+    last_worn INT
   );
   
   
   SHOW TABLES;
-  
-  # SHOW COLUMNS FROM people;
  
-  DESC unique_cats;
+  DESC shirts;
